@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  
 }
 
 * {
@@ -96,9 +95,8 @@ body {
   background-color: #fefefe;
   opacity: 1;
   background-size: 20px 20px;
-  background-image:  repeating-linear-gradient(to right, #f18db2, #f18db2 1px, #fefefe 1px, #fefefe);
+  background-image: repeating-linear-gradient(to right,#f18db2,#f18db2 1px,#fefefe 1px,#fefefe);
 }
-
 
 .pink-color-btn,
 .blue-color-btn,
@@ -110,7 +108,6 @@ body {
   display: block;
   border-radius: 50%;
   margin-top: 15%;
-  
 }
 
 .pink-color-btn,
@@ -151,7 +148,6 @@ body {
   position: absolute;
   top: calc((88vh - 18rem) / 2);
   left: calc((100vw - 35rem) / 2);
-
 }
 
 .task-to-be-added {
@@ -255,5 +251,75 @@ body {
   100% {
     transform: scale(1);
     color: #d43790;
+  }
+}
+
+@media only screen and (max-width: 823px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+  .navbar {
+    width: 100vw;
+  }
+  .add-delete-container {
+    width: 110%;
+    margin-left: 10%;
+  }
+  .filter-container {
+    width: 120%;
+    margin-left: 3%;
+  }
+  .filter {
+    width: 35px;
+    margin-top: 3%;
+  }
+  .refresh,
+  .edit {
+    width: 20px;
+    margin-top: 4%;
+  }
+  .refresh-icon {
+    margin-left: 50%;
+  }
+  .title {
+    visibility: hidden;
+  }
+  .pin {
+    margin-left: 2%;
+  }
+  .modal {
+    width: 125%;
+    height: 50%;
+    margin-left: 15%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    width: 100vw;
+  }
+  .add-delete-container {
+    width: 50%;
+    margin-left: 3%;
+  }
+  .filter-container {
+    width: 120%;
+    margin-left: 2%;
+  }
+  .filter {
+    width: 35px;
+    margin-top: 3%;
+  }
+  .refresh,
+  .edit {
+    width: 20px;
+    margin-top: 4%;
+  }
+  .refresh-icon {
+    margin-left: -29%;
+  }
+  .title {
+    visibility: hidden;
   }
 }
