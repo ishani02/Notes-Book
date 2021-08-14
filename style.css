@@ -1,0 +1,259 @@
+body {
+  margin: 0;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0;
+}
+.navbar {
+  height: 12vh;
+  background-color: #333;
+  display: flex;
+  color: white;
+}
+
+.filter-container,
+.add-delete-container {
+  background-color: #444;
+  display: flex;
+  justify-content: space-around;
+  height: 50%;
+  margin-top: 2vh;
+  margin-left: 8vw;
+  cursor: pointer;
+}
+.filter-container {
+  width: 18vw;
+  text-align: center;
+  display: flex;
+}
+.add-delete-container {
+  width: 9vw;
+  text-align: center;
+}
+.filter,
+.add,
+.delete {
+  height: 100%;
+}
+
+.filter {
+  width: 25%;
+  /* transition: height,transform 2s; */
+}
+.filter:hover {
+  /* transform: scale(1.5); */
+  /* height: 100%; */
+  background-color: rgb(190, 190, 190);
+}
+
+.add,
+.delete {
+  width: 50%;
+}
+.refresh,
+.edit {
+  margin-left: 4%;
+  margin-top: 1.2%;
+  background-color: #444;
+  width: 4vw;
+  height: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.refresh-icon {
+  padding: 0.3rem;
+  margin-left: 13%;
+}
+
+.hover-refresh-active {
+  width: 3.4rem;
+  height: 1.5rem;
+  background-color: gray;
+  position: absolute;
+  top: 90%;
+  left: -3%;
+  text-align: center;
+  border-radius: 2px;
+  color: white;
+  z-index: 3;
+}
+
+.ticket-container {
+  min-height: 88vh;
+  background-color: rgb(228, 227, 227);
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* background-color: #f1cbde; */
+  background-color: #fefefe;
+  opacity: 1;
+  background-size: 20px 20px;
+  background-image:  repeating-linear-gradient(to right, #f18db2, #f18db2 1px, #fefefe 1px, #fefefe);
+}
+
+
+.pink-color-btn,
+.blue-color-btn,
+.green-color-btn,
+.yellow-color-btn {
+  width: 40%;
+  height: 50%;
+  margin-left: 33%;
+  display: block;
+  border-radius: 50%;
+  margin-top: 15%;
+  
+}
+
+.pink-color-btn,
+.pink-modal-filter {
+  background-color: #e44d6a;
+}
+.blue-color-btn,
+.blue-modal-filter {
+  background-color: #2a9df4;
+}
+.green-color-btn,
+.green-modal-filter {
+  background-color: #53cc53;
+}
+.yellow-color-btn,
+.yellow-modal-filter {
+  background-color: #fccf14;
+}
+
+.action-btn {
+  width: 100%;
+  height: 100%;
+  text-align: centre;
+  display: block;
+  font-size: 2rem;
+  padding-top: 0.3rem;
+}
+.action-btn:hover {
+  background-color: rgb(177, 176, 176);
+}
+
+.modal {
+  height: 18rem;
+  width: 35rem;
+  background-color: white;
+  display: flex;
+  box-shadow: 0px 10px 20px 10px gray;
+  position: absolute;
+  top: calc((88vh - 18rem) / 2);
+  left: calc((100vw - 35rem) / 2);
+
+}
+
+.task-to-be-added {
+  height: 100%;
+  width: 70%;
+  padding: 3rem;
+  outline: none;
+}
+.priority-list {
+  height: 100%;
+  width: 30%;
+  background-color: #444;
+  padding: 3rem;
+}
+
+.modal-filter {
+  width: 100%;
+  height: 18%;
+  margin-bottom: 22%;
+}
+.modal-filter:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.modal-filter.active {
+  border: 4px solid;
+}
+.placeholder {
+  color: gray;
+}
+
+.ticket {
+  height: 9rem;
+  width: 16rem;
+  background-color: white;
+  margin-left: 2%;
+  box-shadow: 0px 8px 10px 7px rgb(182, 179, 179);
+}
+.ticket-color {
+  height: 6%;
+  width: 100%;
+}
+.ticket-id {
+  color: gray;
+  height: 15%;
+  width: 100%;
+  padding: 3%;
+}
+.task {
+  width: 100%;
+  height: 79%;
+  padding: 3%;
+}
+.ticket-color-pink {
+  background-color: #e44d6a;
+}
+.ticket-color-blue {
+  background-color: #2a9df4;
+}
+.ticket-color-green {
+  background-color: #53cc53;
+}
+.ticket-color-yellow {
+  background-color: #fccf14;
+}
+
+.btn-active {
+  background-color: rgb(167, 167, 167);
+}
+.active-ticket {
+  box-shadow: 0px 5px 10px 4px gray;
+}
+.active-filter {
+  background-color: black;
+}
+
+.title-bar {
+  margin-top: 0.7%;
+}
+.title {
+  margin-top: 15%;
+  width: 100%;
+}
+.pin {
+  margin-top: 2%;
+  transform: rotate(-22deg);
+}
+.title-animation {
+  animation: scale 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+    color: cyan;
+  }
+  50% {
+    transform: scale(1);
+    color: #fccf14;
+  }
+  100% {
+    transform: scale(1);
+    color: #d43790;
+  }
+}
